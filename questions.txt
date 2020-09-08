@@ -1,0 +1,131 @@
+Shop - Requirement 1
+
+Requirement 1:
+
+Let’s start off by creating two Product objects and check whether they are equal.
+ 
+
+
+	
+Create a Product Class with the following attributes:
+
+
+
+Member Field Name
+Type
+
+_name
+string
+
+_productCode
+string
+
+_brandName
+string
+
+_stockLeft
+int
+
+_price
+double
+
+_expiryDate
+DateTime
+
+
+
+
+	
+Mark all the attributes as private
+
+
+
+	
+Create / Generate appropriate Properties
+
+
+
+	
+Add a default constructor and a parameterized constructor to take in all attributes in the given order: 
+	Product ( string _name, string _productCode, string _brandName, int _stockLeft, double _price, DateTime _expiryDate )
+
+
+
+	
+When the “Product” object is printed, it should display the following details: [Override the ToString method]
+	Print format:
+	Name:"_name"
+	Product Code:"_productCode"
+	Brand Name:"_brandName"
+	Stock Left:"_stockLeft"
+	Price:"_price"
+	Expiry Date:"_expiryDate"
+
+
+
+	
+Two Products are considered to be same if they have the same name(Case – Insensitive), and productCode. Implement the logic in the appropriate function. [Override the Equals method]
+	
+	The input format consists of Product details separated by comma in the below order,
+	name, productCode, brandName, stockLeft, price, expiryDate
+
+
+The Input to your program would be details of two Products, you need to display their details as given in "5th point(refer above)" and compare the two Products and display if the Products are same or different.
+
+Note: There is an empty line between display statements. Print the empty lines in main function.
+              Display one digit after the decimal point for Double datatype.
+
+Sample Input & Output 1:
+
+Enter Product 1 details:
+Hamam,#UN 01 HA-012,Unilever,323,22,29-05-2018
+Enter Product 2 details:
+Hamam,#UN 01 HA-012,Unilever,323,22,29-05-2018
+
+Product 1
+
+Name:Hamam
+Product Code:#UN 01 HA-012
+Brand Name:Unilever
+Stock Left:323
+Price:22.0
+Expiry Date:29-05-2018
+
+Product 2
+
+Name:Hamam
+Product Code:#UN 01 HA-012
+Brand Name:Unilever
+Stock Left:323
+Price:22.0
+Expiry Date:29-05-2018
+
+Product 1 is same as Product 2
+
+Sample Input & Output 2:
+
+Enter Product 1 details:
+Hamam,#UN 01 HA-012,Unilever,323,22,29-05-2018
+Enter Product 2 details:
+Lux,#UN 12 LU-753,Unilever,455,55,30-05-2018
+
+Product 1
+
+Name:Hamam
+Product Code:#UN 01 HA-012
+Brand Name:Unilever
+Stock Left:323
+Price:22.0
+Expiry Date:29-05-2018
+
+Product 2
+
+Name:Lux
+Product Code:#UN 12 LU-753
+Brand Name:Unilever
+Stock Left:455
+Price:55.0
+Expiry Date:30-05-2018
+
+Product 1 and Product 2 are different
+ 
